@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "prevent-chat-deletions",
+  "version": "${version}",
+  "name": "Prevent Chat Deletions",
+  "description": "Prevent the server from deleting chat messages on your client.",
+  "authors": ["red"],
+  "contact": {},
+  "license": "GPL-3.0",
+  "icon": "assets/prevent-chat-deletions/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "dev.thebjoredcraft.preventChatDeletions.client.ClientDataGenerator"
+    ],
+    "client": [
+      "dev.thebjoredcraft.preventChatDeletions.client.ClientMain"
+    ],
+    "main": [
+      "dev.thebjoredcraft.preventChatDeletions.Main"
+    ]
+  },
+  "mixins": [
+    "prevent-chat-deletions.mixins.json",
+    {
+      "config": "prevent-chat-deletions.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-language-kotlin": ">=${kotlin_loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
