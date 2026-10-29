@@ -1,7 +1,4 @@
-## Prevent Chat Deletions Mod
-
-
-![image](src/main/resources/assets/prevent-chat-deletions/icon.png)
+## <img src="src/main/resources/assets/prevent-chat-deletions/icon.png" alt="icon" width="20"/> Prevent Chat Deletions Mod
 
 Prevents the server from deleting signed chat messages without breaking the players chat validation to work on servers with secure chat enabled. This does not handle server clearing your chat by spamming empty lines
 
